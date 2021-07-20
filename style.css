@@ -46,6 +46,9 @@ main img {
 .item {
   flex: 1;
   margin: 10px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction:row;
 }
 
 .item-double {
@@ -157,6 +160,13 @@ footer p {
   padding: 20px;
 }
 
+#menu {
+  flex-direction: row;
+  display:flex;
+  margin:0 auto;
+  padding:0;
+  justify-content:space-around;
+}
 /* -------  Media Query ------- */
 
 @media all and (min-width: 480px) {
@@ -272,5 +282,14 @@ footer p {
   .host-item-2 {
     width: 100%;
     flex-basis: 50%;
+  }
+
+  .group {
+    flex-direction:row;
+  }
+  
+  .item {
+    flex-direction:column;
+    
   }
 }
